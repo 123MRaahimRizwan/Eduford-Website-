@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+    </section>
+
+    <!-- About us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero quia dolores. Quisquam, iure consequuntur maiores sint soluta perferendis quam, ullam iusto quidem possimus odit. Eveniet nostrum repellat, deleniti a incidunt excepturi harum asperiores est magnam eligendi, dicta repudiandae hic veritatis dolor consequatur ipsam labore quidem. Molestiae molestias laudantium enim facilis. Odio reiciendis sit laborum.</p>
+                <a href="" class="my-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="Meeting Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sunt perspiciatis modi debitis consequatur saepe<br>atque inventore praesentium consectetur dolore!</p>
+        <p class="copyright">Made by M.Raahim Rizwan</p>
+    </section>
+
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
